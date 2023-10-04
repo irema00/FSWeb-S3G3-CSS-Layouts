@@ -1,1 +1,84 @@
-/* CSS stillerinizi buraya girin */
+*{
+  flex-grow:1;
+}
+
+#flex-container{
+display:flex;
+padding-left: 1rem;
+background-color: rgb(208, 223, 236);
+flex-direction: row;
+
+}
+
+
+h1 {
+font-family:"Pixelify Sans", sans-serif; 
+font-size: 30px;
+color:rgb(5, 27, 66);
+padding-left:1rem;
+
+}
+
+header {
+  background-color:rgb(208, 223, 236) ;
+}
+
+.navigation  {
+  display: flex;
+  flex-direction:row;
+  width: 45%;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+ 
+  flex-wrap:wrap;
+}
+nav a {
+  border:solid;
+  
+  padding: 0rem 1rem;
+  text-decoration: none;
+  border-color: rgb(24, 49, 117); color:black;
+  background-color: aliceblue;
+
+}
+.profile-pic {
+  display:flex;
+  border-radius: 10%;
+  width:20rem;
+  height: 20rem;
+  margin-top: 1rem;
+  justify-content:flex-start
+}
+.giris {
+  display:flex;
+  align-items: center;
+}
+.basliksag{
+  display:flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  padding: 5rem 7rem ;
+  flex-direction:column;
+
+}
+
+.basliksag a {
+  border: solid;
+  border-color: rgb(190, 141, 106);
+  
+}
+p {
+  display:flex;
+ 
+}
+
+footer{
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+ 
+}
+
+footer img {
+  
+}
