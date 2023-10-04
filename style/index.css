@@ -1,45 +1,47 @@
 *{
   flex-grow:1;
+
 }
 
 #flex-container{
-display:flex;
-padding-left: 1rem;
-background-color: rgb(208, 223, 236);
-flex-direction: row;
-
-}
-
-
-h1 {
-font-family:"Pixelify Sans", sans-serif; 
-font-size: 30px;
-color:rgb(5, 27, 66);
-padding-left:1rem;
-
+  display:flex;
+  padding-left: 1rem;
+  background-color: rgb(208, 223, 236);
+  flex-direction: row;
 }
 
 header {
   background-color:rgb(208, 223, 236) ;
 }
 
-.navigation  {
+nav  {
   display: flex;
-  flex-direction:row;
-  width: 45%;
+ 
+  margin-right: 30%;
   padding-top: 0.2rem;
   padding-bottom: 1rem;
- 
   flex-wrap:wrap;
 }
 nav a {
+  display:flex;
+  margin-right: 1rem ;
   border:solid;
-  
   padding: 0rem 1rem;
   text-decoration: none;
   border-color: rgb(24, 49, 117); color:black;
   background-color: aliceblue;
+  font-family: "Martian Mono" ;
+}
+h1 {
+  font-family:"Pixelify Sans", sans-serif; 
+  font-size: 30px;
+  color:rgb(5, 27, 66);
+  padding-left:1rem;
 
+}
+.giris {
+  display:flex;
+  align-items: center;
 }
 .profile-pic {
   display:flex;
@@ -47,12 +49,24 @@ nav a {
   width:20rem;
   height: 20rem;
   margin-top: 1rem;
-  justify-content:flex-start
+  justify-content:flex-start;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  border-style:dotted;
+  border-color: rgb(4, 4, 88);
 }
-.giris {
-  display:flex;
-  align-items: center;
+.info{
+  font-family:"Martian Mono";
+  font-size: 13px;
+  padding-top: 1rem;
+  margin-right: 10%;
+
 }
+h3 {
+  font-family:"Martian Mono";
+  padding-left: 1rem;
+}
+
 .basliksag{
   display:flex;
   justify-content: flex-start;
@@ -61,24 +75,60 @@ nav a {
   flex-direction:column;
 
 }
-
 .basliksag a {
+  align-items: center; 
   border: solid;
-  border-color: rgb(190, 141, 106);
-  
+  border-color: rgb(247, 225, 101);
+  background-color:rgb(255, 242, 177); 
+  text-decoration: none;
+  color:black;
+  font-family: "Martian Mono";
+  text-align: center;
 }
+
+
+
+
 p {
   display:flex;
+  font-family: "Martian Mono" ;
+  font-size: 12px;
  
 }
+
+.project-pics {
+  display: flex;
+  justify-content: row; align-content: flex-start;
+  flex-wrap: wrap;
+
+
+}
+h4 {
+  display: flex;
+  align-content: ;
+  font-family: "Martian Mono";
+ 
+}
+.project-pics img {
+  display: flex;
+  justify-content: row;
+  border-radius: 5%;
+  border-style:dotted;
+  border-color: rgb(4, 4, 88);
+}
+
 
 footer{
   display:flex;
-  justify-content: center;
-  align-items:flex-start;
- 
+  font-family: "Pixelify Sans";
+  background-color: bisque;
+  justify-content:center;
 }
 
 footer img {
-  
+ display:flex;
+ height: 20px;
+ width: 20px;
+
 }
+
