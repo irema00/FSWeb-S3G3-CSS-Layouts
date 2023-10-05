@@ -1,134 +1,194 @@
-*{
-  flex-grow:1;
-
+* {
+  background-color: rgba(237, 62, 31, 0.2);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#flex-container{
+/* #flex-container{
   display:flex;
   padding-left: 1rem;
   background-color: rgb(208, 223, 236);
   flex-direction: row;
-}
+} */
 
 header {
-  background-color:rgb(208, 223, 236) ;
+  background-color: rgb(208, 223, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 200px;
+  justify-content: center;
+}
+header .name {
+  height: 50%;
+  width: 100%;
+}
+nav {
+  height: 50%;
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
-nav  {
-  display: flex;
- 
-  margin-right: 30%;
-  padding-top: 0.2rem;
-  padding-bottom: 1rem;
-  flex-wrap:wrap;
-}
-nav a {
-  display:flex;
-  margin-right: 1rem ;
-  border:solid;
-  padding: 0rem 1rem;
-  text-decoration: none;
-  border-color: rgb(24, 49, 117); color:black;
+header nav ul li {
+  border: solid;
+  padding: 1rem;
+  border-color: rgb(24, 49, 117);
+  color: black;
   background-color: aliceblue;
-  font-family: "Martian Mono" ;
+  font-family: "Martian Mono";
+}
+
+header nav ul li a {
+  text-decoration: none;
 }
 h1 {
-  font-family:"Pixelify Sans", sans-serif; 
+  font-family: "Pixelify Sans", sans-serif;
   font-size: 30px;
-  color:rgb(5, 27, 66);
-  padding-left:1rem;
-
+  color: rgb(5, 27, 66);
+  padding-left: 1rem;
+  background-color: rgb(208, 223, 236);
 }
+
+.govde {
+  display: flex;
+  flex-direction: column;
+}
+
 .giris {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 .profile-pic {
-  display:flex;
+  display: flex;
   border-radius: 10%;
-  width:20rem;
+  width: 20rem;
   height: 20rem;
   margin-top: 1rem;
-  justify-content:flex-start;
+  justify-content: flex-start;
   margin-left: 2rem;
   margin-bottom: 1rem;
-  border-style:dotted;
+  border-style: dotted;
   border-color: rgb(4, 4, 88);
+
 }
-.info{
-  font-family:"Martian Mono";
+
+.info {
+  font-family: "Martian Mono";
   font-size: 13px;
   padding-top: 1rem;
   margin-right: 10%;
-
 }
 h3 {
-  font-family:"Martian Mono";
-  padding-left: 1rem;
+  font-family: "Martian Mono";
 }
 
-.basliksag{
-  display:flex;
+.basliksag {
+  display: flex;
   justify-content: flex-start;
-  align-items:flex-start;
-  padding: 5rem 7rem ;
-  flex-direction:column;
-
+  align-items: flex-start;
+  padding: 5rem 7rem;
+  flex-direction: column;
 }
 .basliksag a {
-  align-items: center; 
+  align-items: center;
   border: solid;
   border-color: rgb(247, 225, 101);
-  background-color:rgb(255, 242, 177); 
+  background-color: rgb(255, 242, 177);
   text-decoration: none;
-  color:black;
+  color: black;
   font-family: "Martian Mono";
   text-align: center;
+  margin-top: 1rem;
 }
 
-
-
-
 p {
-  display:flex;
-  font-family: "Martian Mono" ;
+  display: flex;
+  font-family: "Martian Mono";
   font-size: 12px;
- 
 }
 
 .project-pics {
   display: flex;
-  justify-content: row; align-content: flex-start;
+  justify-content: space-between;
+  padding:0px 50px;
   flex-wrap: wrap;
-
+  align-content:center;
+   gap:1rem;
 
 }
 h4 {
   display: flex;
   align-content: ;
   font-family: "Martian Mono";
- 
 }
 .project-pics img {
   display: flex;
   justify-content: row;
   border-radius: 5%;
-  border-style:dotted;
+  border-style: dotted;
   border-color: rgb(4, 4, 88);
 }
 
+.contact {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-footer{
-  display:flex;
+.contact .firstchild {
+  border: 1rem;
+}
+
+footer {
+  display: flex;
   font-family: "Pixelify Sans";
   background-color: bisque;
-  justify-content:center;
+}
+.footerpic-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.footerpic-container img {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-footer img {
- display:flex;
- height: 20px;
- width: 20px;
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+  * {
+    background-color: rgba(0, 62, 0, 0.2);
+  }
 
+  .project-pics {
+    align-content:center;
+  }
 }
 
+/*MOBILE*/
+@media only screen and (max-width: 500px) {
+  /* *{
+    background-color: rgba(0, 62, 0, 0.2);
+  
+  } */
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
